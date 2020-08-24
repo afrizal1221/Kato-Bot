@@ -7,9 +7,6 @@ Sebuah template yang dibuat oleh ray#1337 (331265944363991042) dan dikhususkan u
 Projek ini dilindungi oleh **Attribution-ShareAlike 4.0 International** yang dimana penggunanya boleh menggunakan, mendistribusikan, menampilkan, bahkan
 memodifikasi projek ini ke publik. __Namun, biarkan lisensi ini sebagai credit/apresiasi selama penggunaan.__
 
-## Creative Commons Licenses
-**This license lets others remix, tweak, and build upon your work even for commercial purposes, as long as they credit you and license their new creations under the identical terms.** This license is often compared to “copyleft” free and open source software licenses. All new works based on yours will carry the same license, so any derivatives will also allow commercial use. This is the license used by Wikipedia, and is recommended for materials that would benefit from incorporating content from Wikipedia and similarly licensed projects
-
 [![Creative Commons](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0/ "Redirect to Creative Commons")
 
 ## Pemilik
