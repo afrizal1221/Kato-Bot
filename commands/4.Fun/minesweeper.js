@@ -6,9 +6,9 @@ exports.run = async (client, message, args) => {
     switch (args[0]) {
       case '1':
         minesweeper = new Minesweeper({
-          rows: 5,
-          columns: 5,
-          mines: 4,
+          rows: 6,
+          columns: 6,
+          mines: 5,
         });
         break;
       case '2':
@@ -21,58 +21,23 @@ exports.run = async (client, message, args) => {
         break;
       case '3':
         minesweeper = new Minesweeper({
-          rows: 10,
-          columns: 10,
-          mines: 8,
+          rows: 9,
+          columns: 9,
+          mines: 7,
         });
         break;
       case '4':
         minesweeper = new Minesweeper({
-          rows: 14,
-          columns: 14,
-          mines: 9,
+          rows: 11,
+          columns: 11,
+          mines: 8,
         });
         break;
       case '5':
         minesweeper = new Minesweeper({
-          rows: 16,
-          columns: 16,
-          mines: 13,
-        });
-        break;
-      case '6':
-        minesweeper = new Minesweeper({
-          rows: 19,
-          columns: 19,
-          mines: 17,
-        });
-        break;
-      case '7':
-        minesweeper = new Minesweeper({
-          rows: 24,
-          columns: 24,
-          mines: 18,
-        });
-        break;
-      case '8':
-        minesweeper = new Minesweeper({
-          rows: 27,
-          columns: 27,
-          mines: 23,
-        });
-        break;
-      case '9':
-        minesweeper = new Minesweeper({
-          rows: 30,
-          columns: 30,
-          mines: 26,
-        });
-        break;
-      case '10':
-        minesweeper = new Minesweeper({
-          rows: 35,
-          columns: 35,
-          mines: 28,
+          rows: 12,
+          columns: 13,
+          mines: 9,
         });
         break;
       default:
@@ -80,7 +45,7 @@ exports.run = async (client, message, args) => {
         break;
     }
 
-    message.channel.send(minesweeper.start());
+    message.channel.send(minesweeper.start()).then(t => t.delete({timeout: 1.2e+6}));
   } catch (error) {
     return message.channel.send(`Something went wrong: ${error.message}`);
     // Restart the bot as usual.
@@ -89,7 +54,7 @@ exports.run = async (client, message, args) => {
 
 exports.conf = {
   aliases: ["ms"],
-  cooldown: 5
+  cooldown: 8
 }
 
 exports.help = {
